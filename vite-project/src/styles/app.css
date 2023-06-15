@@ -1,0 +1,33 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-fw: 700;
+    --secondary-fw: 500;
+    --primary-fs: 15px;
+    --primary-desaturated-dark-cyan: hsl(180, 29%, 50%);
+    --neutral-bg: hsl(180, 52%, 96%);
+    --neutral-filter-tablets: hsl(180, 31%, 95%);
+    --neutral-dark-grayish-cyan: hsl(180, 8%, 52%);
+    --neutral-very-dark-grayish-cyan: hsl(180, 14%, 20%);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.app {
+    min-height: 100vh;
+    min-height: 100dvh;
+    color: var(--primary-desaturated-dark-cyan);
+    font-family: 'League Spartan', sans-serif;
+    font-size: var(--primary-fs);
+}
+
+.app header {
+    background-color: var(--primary-desaturated-dark-cyan);
+}
