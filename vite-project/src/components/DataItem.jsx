@@ -22,26 +22,31 @@ const DataItem = ({
           <img src={logo} alt="logo" />
         </div>
         <div className="content">
-          <h1 className="company">{company}</h1>
-          {newItem && <span>{newItem}</span>}
-          {featured && <span>{featured}</span>}
-          <div className="position">{position}</div>
+          <h1 className="company">
+            {company}
+            {newItem && <span className="newItem">NEW!</span>}
+            {featured && <span className="featured">FEATURED</span>}
+          </h1>
+
+          <div className="position">
+            <b>{position}</b>
+          </div>
           <div className="detail">
-            <span>{postedAt}</span>
-            <span>.</span>
-            <span>{contract}</span>
-            <span>.</span>
-            <span>{location}</span>
+            <span className="post-at">{postedAt}</span>
+
+            <span className="contract">{contract}</span>
+
+            <span className="location">{location}</span>
           </div>
         </div>
         <div className="attribute-list">
           <AttributeItem value={role} />
           <AttributeItem value={level} />
-          {languages.map((lang, idx) => (
+          {languages?.map((lang, idx) => (
             <AttributeItem key={idx} value={lang} />
           ))}
-          {tools.length !== 0 &&
-            tools.map((tool, idx) => <AttributeItem key={idx} value={tool} />)}
+          {tools?.length !== 0 &&
+            tools?.map((tool, idx) => <AttributeItem key={idx} value={tool} />)}
         </div>
       </div>
     </div>

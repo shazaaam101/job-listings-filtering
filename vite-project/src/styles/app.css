@@ -11,6 +11,7 @@
     --primary-desaturated-dark-cyan: hsl(180, 29%, 50%);
     --neutral-bg: hsl(180, 52%, 96%);
     --neutral-filter-tablets: hsl(180, 31%, 95%);
+    --neutral-white: hsl(0, 0%, 100%);
     --neutral-dark-grayish-cyan: hsl(180, 8%, 52%);
     --neutral-very-dark-grayish-cyan: hsl(180, 14%, 20%);
 }
@@ -26,8 +27,16 @@ img {
     color: var(--primary-desaturated-dark-cyan);
     font-family: 'League Spartan', sans-serif;
     font-size: var(--primary-fs);
+    background-color: var(--neutral-bg);
 }
 
 .app header {
     background-color: var(--primary-desaturated-dark-cyan);
+    z-index: -1;
+}
+
+.app .container {
+    position: relative;
+    width: min(90%, 80rem);
+    margin-inline: auto;
 }

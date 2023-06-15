@@ -1,0 +1,13 @@
+.attribute-item {
+    padding: .5em;
+    background-color: var(--neutral-filter-tablets);
+    border-radius: 5px;
+    font-weight: var(--primary-fw);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.attribute-item:is(:hover, :focus-visible) {
+    background-color: var(--primary-desaturated-dark-cyan);
+    color: var(--neutral-white);
+}

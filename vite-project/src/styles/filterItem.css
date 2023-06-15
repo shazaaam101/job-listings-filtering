@@ -1,0 +1,23 @@
+.filter-item {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--neutral-filter-tablets);
+}
+
+.filter-item .tag {
+    padding: .5em;
+}
+
+.filter-item .cancel-btn {
+    cursor: pointer;
+    align-self: stretch;
+    border: none;
+    padding: .5em;
+    background-color: var(--primary-desaturated-dark-cyan);
+    transition: 0.3s ease;
+}
+
+.filter-item .cancel-btn:is(:hover, :focus-visible) {
+    background-color: var(--neutral-very-dark-grayish-cyan);
+}

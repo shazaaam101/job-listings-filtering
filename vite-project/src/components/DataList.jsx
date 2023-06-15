@@ -1,12 +1,13 @@
 import React from "react";
 import DataItem from "./DataItem";
+import "../styles/dataList.css";
 
 const DataList = ({ myData }) => {
   return (
     <div className="data-list">
-      {myData.map((data) => (
+      {myData.map((data, idx) => (
         <DataItem
-          key={data.id}
+          key={idx}
           company={data.company}
           logo={data.logo}
           newItem={data.new}
